@@ -1,0 +1,331 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+    
+
+}
+body::-webkit-scrollbar {
+    display: none;
+   
+}
+
+body{
+    /* scrollbar-width: none;   */
+    /* overflow-y: scroll */
+    /* overflow: hidden; */
+    /* overflow: scroll;  */
+    /* overflow-y: hidden; */   
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    display: flex;
+    /* justify-content:space-around; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid #d8d8d8;
+    box-shadow:2px 2px 5px #d8d8d8;
+    position: sticky;
+    top: -10px;
+    background-color: #fff;
+    /* scroll-behavior: smooth; */
+    
+}
+
+.left {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* margin: 10px; */
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 20%;
+    /* position: relative; */
+}
+
+.manubox{
+    padding: 2px 2px 0px 2px;
+    cursor: pointer;
+
+ }
+.namulogo {
+    margin: 8px;
+    opacity: 0.6; 
+}
+.mainmanubox{
+    position: absolute;
+    z-index: 5;
+    top:65px;
+    left:5px; 
+    border-radius: 3px;
+    background-color:#333344dc;
+    visibility: hidden;
+}
+.mainmanu{
+    margin:2px 10px;
+    color: #f1f1f1;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.birthday {
+    margin: 15px;
+    text-transform:uppercase;
+    /* text-shadow: 4px 4px 2px rgba(255,255,255, 0.8); */
+    opacity: 0.9;
+}
+
+.center {
+    flex-basis: 40%;
+    position: relative;
+    /* background-color:#e5e5e57c; */
+     border-radius: 8px;
+    box-shadow: 0px 0.5px 1px 0.5px #666666;
+    /* box-shadow: #f1f1f1; */
+    /* display: flex; */
+    /* border: 2px solid red; */
+}
+
+.search {
+    height: 45px;
+    width: 90%;
+    /* border: 2px solid green;s */
+    /* border-radius: 5px; */
+    outline: none;
+    font-size: 16px;
+    border: none;
+    /* background-color:rgb(233, 233, 233); */
+    /* background-color: transparent; */
+    color: black;
+    margin-left: 50px;
+}
+
+.searchbox{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    /* opacity: 0.6; */
+    padding: 1px 2px 0px 2px;
+    cursor: pointer;
+
+    }
+.searchicon{
+    margin: 5px;
+    opacity: 0.6;
+}
+.centersearch{
+    position: absolute;
+    top:50px;
+    border-radius: 3px;
+    background-color:#333344dc;
+    visibility: hidden;
+}
+.searchpara{
+    margin:2px 10px;
+    color: #f1f1f1;
+}
+
+.crossbox{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    /* opacity: 0.6; */
+    visibility: hidden;
+    padding: 2px 2px 0px 2px;
+    cursor: pointer;
+}
+.crossicon{
+    margin: 10px;
+    opacity: 0.6;
+}
+
+.right {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon {
+    margin: 8px;
+    opacity: 0.6;
+}
+
+.righticon{
+    padding: 1px 2px 0px 2px;
+}
+.viewbox{
+    position: absolute;
+    top:65px;
+    /* left:5px;  */
+    border-radius: 3px;
+    background-color:#333344dc;
+    visibility: hidden;
+}
+.rightrefresh{
+    margin:2px 10px;
+    color: #f1f1f1;
+}
+.rightlistview{
+    margin:2px 10px;
+    color: #f1f1f1;
+}
+.rightsettins{
+    margin:2px 10px;
+    color: #f1f1f1;
+}
+.rightapps{
+    margin:2px 10px;
+    color: #f1f1f1;
+}
+.rightaccount{
+    margin:2px 10px;
+    color: #f1f1f1;
+       
+}
+
+/* hover effects in css  */
+
+.manubox:hover {
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+.manubox:hover .mainmanubox{
+   visibility: visible;
+
+}
+.righticon:hover .viewbox{
+    visibility: visible; 
+}
+.righticon:hover .rightspace{
+    right: 10px;
+}
+.righticon:hover .icon{
+    opacity: 1;
+}
+.righticon:hover {
+    background-color: #e5e5e5;
+    border-radius: 50%;   
+}
+.searchbox:hover{
+    background-color:#d8d8d8;
+    border-radius: 50%; 
+}
+.searchbox:hover .centersearch{
+   visibility: visible;
+}
+.crossbox:hover{
+    background-color:#d8d8d8;
+    border-radius: 50%; 
+}
+.crossbox:hover .centersearch{
+    visibility: visible;
+}
+
+/* ----------------------------this is the css for second box------------------ */
+
+.secondbox{
+    display: flex;
+    /* border: 1px solid red; */
+    /* position: relative; */
+    justify-content: space-around;
+    text-align: start;
+    
+    
+}
+.leftside{
+/* flex-basis: 0%; */
+ /* border: 1px solid blue; */
+ height: 90vh;
+ /* background-color: #fff; */
+ transition: all 0.2s;
+ /* width: 5%; */
+ position: fixed;
+ /* top: 13vh; */
+ left: 0px;
+ /* box-shadow: none; */
+ /* z-index: -1; */
+}
+.adjuctall{
+    /* border: 2px solid green; */
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/* .imageicon{ */
+    /* display: flex; */
+    /* margin: 8px; */
+    /* border: 1px solid yellow; */
+    /* align-items: center; */
+    /* padding: 10px; */
+    
+    /* border-radius: 20px; */
+    /* padding: 10px ; */
+    /* padding-left: 20px; */
+    /* position: absolute; */
+    /* left: -15px; */
+/* } */
+.iconshow{
+padding: 10px 12px;
+    
+}
+
+.text{
+    /* margin: 0px 20px; */
+    padding: 10px 12px;
+    display: none;
+    font-size: 20px;
+    
+    
+}
+.circle{
+    /* margin: 0px 20px ; */
+    /* border: 1px solid red; */
+    display: flex;
+    
+    /* width: 20px; */
+    /* padding: 10px 12px; */
+    border-radius: 50px;
+    margin-bottom: 0px;
+
+}
+
+.active{
+    background-color: wheat;
+    
+}
+.circle:hover{
+    background-color:#f1f1f1;
+    
+}
+.active:hover{
+    background-color: wheat;
+}
+/* .circle:hover .text{
+    display: block;
+} */
+
+
+/* .leftside:hover{ */
+/* width: 20%; */
+/* left: -15px; */
+/* border-radius: 15px; */
+/* } */
+
+
+
+.rightside{
+flex-basis: 50%;
+/* text-align: right; */
+ /* border: 1px solid green; */
+/* z-index: -1; */
+
+}
